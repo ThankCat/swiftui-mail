@@ -16,6 +16,10 @@ struct SplashPage: View {
             
             // 静态页面
             StaticContent()
+            
+            // 广告控件
+            MyAdControl(remainingSeconds: 4)
+            
         }
     }
 }
@@ -28,10 +32,22 @@ struct StaticContent: View {
             Spacer()
             Image("SplashLogo")
                 .padding(.bottom, 20)
-            Text("Copyright © 2024 Ixuea. All Rights Reserved")
+            Text(verbatim: "Copyright © 2024 Ixuea. All Rights Reserved")
                 .font(.system(size: 12))
                 .foregroundStyle(.white)
                 .padding(.bottom, 20)
+        }
+    }
+}
+
+struct MyAdControl: View {
+    var remainingSeconds: Int
+    
+    var body: some View {
+        VStack {
+            
+            Text(String(format: LocalizedString(""), remainingSeconds))
+            Text("WifiProload")
         }
     }
 }

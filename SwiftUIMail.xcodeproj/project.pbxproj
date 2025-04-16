@@ -54,6 +54,13 @@
 			);
 			target = 8719797C2DA8028F0058C62F /* SwiftUIMail */;
 		};
+		87C5960D2DAE9E5100A82804 /* Exceptions for "SwiftUIMail" folder in "SwiftUIMailUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Localizable.xcstrings,
+			);
+			target = 871979962DA802900058C62F /* SwiftUIMailUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +68,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				87C595EE2DAE895800A82804 /* Exceptions for "SwiftUIMail" folder in "SwiftUIMail" target */,
+				87C5960D2DAE9E5100A82804 /* Exceptions for "SwiftUIMail" folder in "SwiftUIMailUITests" target */,
 			);
 			path = SwiftUIMail;
 			sourceTree = "<group>";
@@ -250,11 +258,11 @@
 				};
 			};
 			buildConfigurationList = 871979782DA8028F0058C62F /* Build configuration list for PBXProject "SwiftUIMail" */;
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				"zh-Hans",
 			);
 			mainGroup = 871979742DA8028F0058C62F;
 			minimizedProjectReferenceProxies = 1;
@@ -497,6 +505,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -553,6 +562,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
