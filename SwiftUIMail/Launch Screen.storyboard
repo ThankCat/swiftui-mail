@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,7 +30,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" name="PrimaryColor2"/>
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="OgU-lc-foy" secondAttribute="bottom" constant="20" id="8mV-2e-jzk"/>
                             <constraint firstItem="Zjm-gQ-SV8" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="120" id="BZG-0z-W6U"/>
@@ -49,8 +49,8 @@
     <resources>
         <image name="SplashBanner" width="157.5" height="157.5"/>
         <image name="SplashLogo" width="244" height="27"/>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="PrimaryColor2">
+            <color red="1" green="0.22699999809265137" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

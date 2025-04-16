@@ -11,7 +11,7 @@ struct SplashPage: View {
     var body: some View {
         ZStack {
             // 背景色
-            Color(.red)
+            Color(.primaryColor2)
                 .ignoresSafeArea(edges: .all)
             
             // 静态页面
@@ -43,6 +43,9 @@ struct StaticContent: View {
 }
 
 struct MyAdControl: View {
+    // 获取环境变量中的颜色模式
+    @Environment(\.colorScheme) var colorScheme
+    
     var remainingSeconds: Int
     
     var body: some View {
@@ -50,6 +53,16 @@ struct MyAdControl: View {
             
             Text(String(format: LocalizedString("SkipADCount"), remainingSeconds))
             Text("WifiProload")
+            
+            // 判断颜色模式
+            switch colorScheme {
+            case .light:
+                Text(verbatim: "浅色模式")
+            case .dark:
+                Text(verbatim: "深色模式")
+            @unknown default:
+                Text(verbatim: "未知模式")
+            }
         }
     }
 }
