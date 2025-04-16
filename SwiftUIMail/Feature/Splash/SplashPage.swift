@@ -15,7 +15,7 @@ struct SplashPage: View {
                 .ignoresSafeArea(edges: .all)
             
             // 静态页面
-            StaticContent()
+            StaticContent(year: SuperDateUtil.currentYear())
             
             // 广告控件
             MyAdControl(remainingSeconds: 4)
@@ -25,6 +25,8 @@ struct SplashPage: View {
 }
 
 struct StaticContent: View {
+    let year: Int
+    
     var body: some View {
         VStack {
             Image("SplashBanner")
@@ -32,7 +34,7 @@ struct StaticContent: View {
             Spacer()
             Image("SplashLogo")
                 .padding(.bottom, 20)
-            Text(verbatim: "Copyright © 2024 Ixuea. All Rights Reserved")
+            Text(verbatim: "Copyright © \(year) Ixuea. All Rights Reserved")
                 .font(.system(size: 12))
                 .foregroundStyle(.white)
                 .padding(.bottom, 20)
@@ -46,7 +48,7 @@ struct MyAdControl: View {
     var body: some View {
         VStack {
             
-            Text(String(format: LocalizedString(""), remainingSeconds))
+            Text(String(format: LocalizedString("SkipADCount"), remainingSeconds))
             Text("WifiProload")
         }
     }
