@@ -9,10 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        SplashPage()
+        MyContentView()
+    }
+}
+
+
+struct MyContentView: View {
+    @EnvironmentObject var appState: AppState
+
+    var body: some View {
+        
+        if appState.showSplash {
+            SplashPage()
+        } else {
+            MainPage()
+        }
+        
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().environmentObject(AppState.shared)
 }
