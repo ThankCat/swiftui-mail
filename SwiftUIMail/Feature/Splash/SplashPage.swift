@@ -8,6 +8,19 @@
 import SwiftUI
 
 struct SplashPage: View {
+    @StateObject var splashViewModel = SplashViewModel()
+    
+    var body: some View {
+        SplashContentView(remainingSeconds:splashViewModel.remainingSeconds)
+            .onAppear {
+                splashViewModel.loadData()
+            }
+    }
+}
+
+struct SplashContentView: View {
+    var remainingSeconds: Int
+    
     var body: some View {
         ZStack {
             // 背景色
@@ -18,7 +31,7 @@ struct SplashPage: View {
             StaticContent(year: SuperDateUtil.currentYear())
             
             // 广告控件
-            MyAdControl(remainingSeconds: 4)
+            MyAdControl(remainingSeconds: remainingSeconds)
             
         }
     }
@@ -68,5 +81,5 @@ struct MyAdControl: View {
 }
 
 #Preview {
-    SplashPage()
+    SplashContentView(remainingSeconds: 3)
 }

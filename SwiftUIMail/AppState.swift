@@ -13,4 +13,8 @@ final class AppState: ObservableObject {
     @Published var showSplash: Bool = true
     
     private init() {}
+    
+    func doFinishSplash() {
+        self.showSplash = false
+    }
 }
