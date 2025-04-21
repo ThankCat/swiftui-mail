@@ -82,6 +82,7 @@
       }
     },
     "DiscoveryPage" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -128,6 +129,9 @@
           }
         }
       }
+    },
+    "PlaceHolder %lld" : {
+
     },
     "Short Video" : {
       "localizations" : {

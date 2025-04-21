@@ -19,7 +19,7 @@ struct MainPage: View {
                 }
                 .tag(0).id(0)
 
-            ShortVideoPage()ShortVideoPage
+            ShortVideoPage()
                 .tabItem {
                     Image(selectedIndex == 1 ? "HomeSelected" : "Home")
                     Text("Short Video")
