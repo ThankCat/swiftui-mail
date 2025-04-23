@@ -29,6 +29,7 @@ struct DiscoveryPageContent: View {
                 })
             }
         }
+        .background(.background2)
         
     }
 }
@@ -45,7 +46,7 @@ struct DiscoveryNavigationTitle: View {
             // 扫描二维码 Button
             Button(action: leftClick) {
                 Image(systemName: "qrcode.viewfinder")
-                    .font(.system(size: 18))
+                    .font(.body2XLarge)
             }
             .buttonStyle(PlainButtonStyle())
             
@@ -53,26 +54,26 @@ struct DiscoveryNavigationTitle: View {
             Button(action: searchClick) {
                 HStack {
                     Image(systemName: "magnifyingglass")
-                        .font(.system(size: 12))
+                        .font(.bodySmall)
                         .foregroundStyle(.outline)
                     Text(verbatim: "Amy")
-                        .font(.system(size: 12))
+                        .font(.bodySmall)
                         .foregroundStyle(.outline)
                 }
-                .frame(maxWidth: .infinity, minHeight: 35)
-                .background(.gray)
-                .clipShape(RoundedRectangle(cornerRadius: 30))
+                .frame(maxWidth: .infinity, minHeight: NavigationBarSearchHeight)
+                .background(.surfaceVariant)
+                .clipShape(extraLargeShape)
             }
             
             // 消息 Button
             Button(action: rightClick) {
                 Image(systemName: "ellipsis.message")
-                    .font(.system(size: 18))
+                    .font(.body2XLarge)
             }
             .buttonStyle(PlainButtonStyle())
         }
-        .frame(height: 44)
-        .padding(.horizontal, 16)
+        .frame(height: NavigationBarHeight)
+        .padding(.horizontal, SpaceOuter)
     }
 }
 
