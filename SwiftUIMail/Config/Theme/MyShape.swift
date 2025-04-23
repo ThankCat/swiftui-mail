@@ -8,7 +8,8 @@
 import SwiftUI
 
 // 定义圆角矩形形状
-let extraSmallRoundedCornerShape = RoundedRectangle(cornerRadius: extraSmallCornerRadius)
+let extraSmallRoundedCornerShape = RoundedRectangle(
+    cornerRadius: extraSmallCornerRadius)
 
 let extraSmallShape = RoundedRectangle(cornerRadius: extraSmallCornerRadius)
 let smallShape = RoundedRectangle(cornerRadius: smallCornerRadius)

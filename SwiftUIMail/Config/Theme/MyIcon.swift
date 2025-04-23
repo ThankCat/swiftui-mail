@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-func ArrowIcon(foregroundStyle:Color = .arrow) -> some View {
+func ArrowIcon(foregroundStyle: Color = .arrow) -> some View {
     Image(systemName: "chevron.right")
         .foregroundStyle(foregroundStyle)
 }

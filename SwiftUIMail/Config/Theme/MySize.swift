@@ -20,8 +20,8 @@ let SpaceSmall: CGFloat = 5.0
 let SpaceExtraSmall2: CGFloat = 2.0
 let SpaceExtraSmall: CGFloat = 0.7
 
-let BUTTON_HEIGHT: CGFloat=42
-let BUTTON_HEIGHT_MEDDLE: CGFloat=48
+let BUTTON_HEIGHT: CGFloat = 42
+let BUTTON_HEIGHT_MEDDLE: CGFloat = 48
 
 let NavigationBarSearchHeight: CGFloat = 35
 let NavigationBarHeight: CGFloat = 44
@@ -32,7 +32,6 @@ let smallCornerRadius: CGFloat = 10
 let mediumCornerRadius: CGFloat = 16
 let largeCornerRadius: CGFloat = 20
 let extraLargeCornerRadius: CGFloat = 30
-
 
 func SpaceHalfExtraMediumHeightView() -> some View {
     Spacer().frame(height: SpaceHalfExtraMedium)
@@ -58,7 +57,6 @@ func Space4XLargeHeightView() -> some View {
     Spacer().frame(height: Space4XLarge)
 }
 
-
 func SpaceLargeView() -> some View {
     Spacer(minLength: SpaceLarge)
 }
@@ -80,7 +78,6 @@ func SpaceExtraOuterHeightView() -> some View {
         .background(.arrow)
 }
 
-
 func SpaceExtraSmallHeightView() -> some View {
     Spacer().frame(height: SpaceExtraSmall)
         .background(.arrow)
@@ -94,7 +91,6 @@ func SpaceSmallHeightView() -> some View {
 func SpaceSmallWidthView() -> some View {
     Spacer().frame(width: SpaceSmall)
 }
-
 
 func SpaceMediumHeightView() -> some View {
     Spacer().frame(height: SpaceMedium)

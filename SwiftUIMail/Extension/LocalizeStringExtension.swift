@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 /// 国际化模版字符串
 /// - Parameter key: 国际化标识符
 /// - Returns: 取出的其中的字符串

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SplashPage: View {
     @StateObject var splashViewModel = SplashViewModel()
-    
+
     var body: some View {
-        SplashContentView(remainingSeconds:splashViewModel.remainingSeconds)
+        SplashContentView(remainingSeconds: splashViewModel.remainingSeconds)
             .onAppear {
                 splashViewModel.loadData()
             }
@@ -20,26 +20,26 @@ struct SplashPage: View {
 
 struct SplashContentView: View {
     var remainingSeconds: Int
-    
+
     var body: some View {
         ZStack {
             // 背景色
             Color(.primaryColor2)
                 .ignoresSafeArea(edges: .all)
-            
+
             // 静态页面
             StaticContent(year: SuperDateUtil.currentYear())
-            
+
             // 广告控件
             MyAdControl(remainingSeconds: remainingSeconds)
-            
+
         }
     }
 }
 
 struct StaticContent: View {
     let year: Int
-    
+
     var body: some View {
         VStack {
             Image("SplashBanner")
@@ -58,15 +58,17 @@ struct StaticContent: View {
 struct MyAdControl: View {
     // 获取环境变量中的颜色模式
     @Environment(\.colorScheme) var colorScheme
-    
+
     var remainingSeconds: Int
-    
+
     var body: some View {
         VStack {
-            
-            Text(String(format: LocalizedString("SkipADCount"), remainingSeconds))
+
+            Text(
+                String(format: LocalizedString("SkipADCount"), remainingSeconds)
+            )
             Text("WifiProload")
-            
+
             // 判断颜色模式
             switch colorScheme {
             case .light:
