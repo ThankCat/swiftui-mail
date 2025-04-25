@@ -9,7 +9,9 @@ import SwiftUI
 
 struct DiscoveryPage: View {
     var body: some View {
-        DiscoveryPageContent(leftClick: {}, searchClick: {}, rightClick: {})
+        DiscoveryPageContent(
+            leftClick: {}, searchClick: {}, rightClick: {},
+            datum: Product.PREVIEW_DATUM)
     }
 }
 
@@ -17,6 +19,8 @@ struct DiscoveryPageContent: View {
     var leftClick: () -> Void
     var searchClick: () -> Void
     var rightClick: () -> Void
+    var datum: [Product]
+
     var body: some View {
         VStack(spacing: 0) {
             DiscoveryNavigationTitle(
@@ -26,8 +30,8 @@ struct DiscoveryPageContent: View {
                 LazyVStack(
                     spacing: 0,
                     content: {
-                        ForEach(1...1000, id: \.self) { count in
-                            Text("PlaceHolder \(count)")
+                        ForEach(datum, id: \.id) { item in
+                            ItemProduct(data: item)
                         }
                     })
             }
@@ -83,5 +87,7 @@ struct DiscoveryNavigationTitle: View {
 }
 
 #Preview {
-    DiscoveryPageContent(leftClick: {}, searchClick: {}, rightClick: {})
+    DiscoveryPageContent(
+        leftClick: {}, searchClick: {}, rightClick: {},
+        datum: Product.PREVIEW_DATUM)
 }

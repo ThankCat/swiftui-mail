@@ -186,7 +186,7 @@ struct Product: Identifiable, Codable, Hashable {
             news: 1,
             recommend: 1,
             commentsRate: 1228,
-            commentsCount: 0,
+            commentsCount: 99,
             salesCount: 0,
             stocksCount: 0,
             score: 5
