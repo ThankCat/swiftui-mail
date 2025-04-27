@@ -5,6 +5,7 @@
 //  Created by CHEN Hao on 2025/4/25.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct ItemProduct: View {
@@ -13,12 +14,24 @@ struct ItemProduct: View {
         HStack {
 
             // MARK: - 商品预览图
-            Image("Placeholder")
-                .resizable()
-                .aspectRatio(contentMode: .fill)  // 等比例缩放
-                .frame(width: 120, height: 120)
-                .background(.outline)
-                .clipShape(extraSmallShape)
+            if let icon = data.icon {
+                KFImage.url(icon.url)
+                    .onProgress { receivedSize, totalSize in }
+                    .onSuccess { result in }
+                    .onFailure { error in }
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 120, height: 120)
+                    .background(.divider)
+                    .clipShape(extraSmallShape)
+            } else {
+                Image("Placeholder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)  // 等比例缩放
+                    .frame(width: 120, height: 120)
+                    .background(.outline)
+                    .clipShape(extraSmallShape)
+            }
 
             VStack(alignment: .leading) {
                 // MARK: - 商品标题
@@ -41,7 +54,7 @@ struct ItemProduct: View {
                     Text(String(format: "¥%.2f", data.priceFloat))
                         .font(.titleMedium)
                         .foregroundStyle(.primaryColor3)
- 
+
                     SpaceMediumWidthView()
 
                     // MARK: - 商品原价

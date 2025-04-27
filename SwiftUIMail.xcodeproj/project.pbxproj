@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37A9792F93FDEB598D35412D /* Pods_SwiftUIMailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289FA1C397B7A4F0083145E4 /* Pods_SwiftUIMailTests.framework */; };
+		877350B42DBE75B7006F12C7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 877350B32DBE75B7006F12C7 /* Kingfisher */; };
 		87B05BC82DABFD210069F851 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 87B05BC72DABFD210069F851 /* Moya */; };
 		87B05BCA2DABFD210069F851 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87B05BC92DABFD210069F851 /* RxMoya */; };
 		A9B3D4A5E6D4081D6BEB3022 /* Pods_SwiftUIMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E119CBBB6490C32E26703D /* Pods_SwiftUIMail.framework */; };
@@ -82,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877350B42DBE75B7006F12C7 /* Kingfisher in Frameworks */,
 				87B05BCA2DABFD210069F851 /* RxMoya in Frameworks */,
 				87B05BC82DABFD210069F851 /* Moya in Frameworks */,
 				A9B3D4A5E6D4081D6BEB3022 /* Pods_SwiftUIMail.framework in Frameworks */,
@@ -176,6 +178,7 @@
 			packageProductDependencies = (
 				87B05BC72DABFD210069F851 /* Moya */,
 				87B05BC92DABFD210069F851 /* RxMoya */,
+				877350B32DBE75B7006F12C7 /* Kingfisher */,
 			);
 			productName = SwiftUIMail;
 			productReference = 8719797D2DA8028F0058C62F /* SwiftUIMail.app */;
@@ -260,6 +263,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				87B05BC62DABFCA90069F851 /* XCRemoteSwiftPackageReference "Moya" */,
+				877350B22DBE75B7006F12C7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8719797E2DA8028F0058C62F /* Products */;
@@ -571,6 +575,7 @@
 				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -605,6 +610,7 @@
 				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -745,6 +751,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		877350B22DBE75B7006F12C7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 8.3.2;
+			};
+		};
 		87B05BC62DABFCA90069F851 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -756,6 +770,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		877350B32DBE75B7006F12C7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 877350B22DBE75B7006F12C7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		87B05BC72DABFD210069F851 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87B05BC62DABFCA90069F851 /* XCRemoteSwiftPackageReference "Moya" */;
