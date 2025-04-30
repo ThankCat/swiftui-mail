@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DiscoveryPage: View {
+    @StateObject var viewModel: DiscoveryViewModel
     var body: some View {
         DiscoveryPageContent(
             leftClick: {}, searchClick: {}, rightClick: {},

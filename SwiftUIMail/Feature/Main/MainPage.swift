@@ -12,7 +12,7 @@ struct MainPage: View {
 
     var body: some View {
         TabView(selection: $selectedIndex) {
-            DiscoveryPage()
+            DiscoveryPage(viewModel: .init())
                 .tabItem {
                     Image(selectedIndex == 0 ? "HomeSelected" : "Home")
                     Text("Discovery")
