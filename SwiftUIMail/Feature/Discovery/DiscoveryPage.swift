@@ -25,7 +25,6 @@ struct DiscoveryPageContent: View {
         VStack(spacing: 0) {
             DiscoveryNavigationTitle(
                 leftClick: {}, searchClick: {}, rightClick: {})
-
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVStack(
                     spacing: 0,
@@ -49,7 +48,6 @@ struct DiscoveryNavigationTitle: View {
 
     var body: some View {
         HStack {
-
             // 扫描二维码 Button
             Button(action: leftClick) {
                 Image(systemName: "qrcode.viewfinder")
