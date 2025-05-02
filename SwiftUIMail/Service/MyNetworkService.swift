@@ -12,17 +12,17 @@ import Moya
 enum MyNetworkService {
     // 获取商品列表，请求参数为字典类型
     case products(data: [String: Any])
-    
+
     // 获取用户详情，请求参数为用户 ID
     case userDetail(id: String)
-    
+
     // 用户注册，请求参数为 User 类型数据
     case register(data: User)
 }
 
 // 扩展 MyNetworkService 以遵循 Moya 的 TargetType 协议
 extension MyNetworkService: TargetType {
-    
+
     // 设置基础 URL，从配置中读取
     var baseURL: URL {
         return URL(string: Config.ENDPOINT)!
@@ -32,11 +32,11 @@ extension MyNetworkService: TargetType {
     var path: String {
         switch self {
         case .products:
-            return "v1/products/page"         // 商品分页接口
+            return "v1/products/page"  // 商品分页接口
         case .userDetail:
-            return "v1/users/info"           // 用户信息接口
+            return "v1/users/info"  // 用户信息接口
         case .register:
-            return "v1/users/add"            // 用户注册接口
+            return "v1/users/add"  // 用户注册接口
         }
     }
 
@@ -44,11 +44,11 @@ extension MyNetworkService: TargetType {
     var method: Moya.Method {
         switch self {
         case .products:
-            return .get                      // 获取商品使用 GET
+            return .get  // 获取商品使用 GET
         case .userDetail:
-            return .get                      // 获取用户详情使用 GET
+            return .get  // 获取用户详情使用 GET
         case .register:
-            return .post                     // 注册用户使用 POST
+            return .post  // 注册用户使用 POST
         }
     }
 
@@ -61,22 +61,25 @@ extension MyNetworkService: TargetType {
                 parameters: data,
                 encoding: URLEncoding.queryString
             )
-        case .userDetail:
-            // 无需附加参数
-            return .requestPlain
+        case .userDetail(let id):
+            return .requestParameters(
+                parameters: ["id": id], encoding: URLEncoding.queryString)
         case .register(let data):
             // 将用户数据作为 JSON 编码发送
             return .requestJSONEncodable(data)
+        //        default:
+        //            // 无需附加参数
+        //            return .requestPlain
         }
     }
 
     // 设置请求头部信息
     var headers: [String: String]? {
         var headers: [String: String] = [:]
-        
+
         // 设置内容类型为 JSON
         headers["Content-Type"] = "application/json"
-        
+
         return headers
     }
 }
