@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37A9792F93FDEB598D35412D /* Pods_SwiftUIMailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289FA1C397B7A4F0083145E4 /* Pods_SwiftUIMailTests.framework */; };
+		512FCAF76EAA13DB94ED8303 /* Pods_SwiftUIMailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4611A06F274F4E71A7B726A /* Pods_SwiftUIMailTests.framework */; };
 		877350B42DBE75B7006F12C7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 877350B32DBE75B7006F12C7 /* Kingfisher */; };
 		87B05BC82DABFD210069F851 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 87B05BC72DABFD210069F851 /* Moya */; };
 		87B05BCA2DABFD210069F851 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87B05BC92DABFD210069F851 /* RxMoya */; };
-		A9B3D4A5E6D4081D6BEB3022 /* Pods_SwiftUIMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E119CBBB6490C32E26703D /* Pods_SwiftUIMail.framework */; };
-		D4945E54496C376A39657062 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B099F8324E7061ED469A59BE /* Pods_SwiftUIMail_SwiftUIMailUITests.framework */; };
+		C355507E8B6D777B9919F000 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC4CA07C6E00F3B766B4A93 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework */; };
+		EE2804FE4C4321663209861F /* Pods_SwiftUIMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80425F9899FB910E1F2F8A69 /* Pods_SwiftUIMail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,27 +33,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FFC064C8F0F85322B31672 /* Pods-SwiftUIMailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.release.xcconfig"; sourceTree = "<group>"; };
-		01593107465471A07C7EA583 /* Pods-SwiftUIMailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.debug.xcconfig"; sourceTree = "<group>"; };
-		23F91A5254FF884B9687F392 /* Pods-SwiftUIMail.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.local.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.local.xcconfig"; sourceTree = "<group>"; };
-		27E119CBBB6490C32E26703D /* Pods_SwiftUIMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		289FA1C397B7A4F0083145E4 /* Pods_SwiftUIMailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIMailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B7D24D9F341B66D2EE6A744 /* Pods-SwiftUIMail.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.prod.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.prod.xcconfig"; sourceTree = "<group>"; };
-		3D9457CA93BF06C4910AA4B0 /* Pods-SwiftUIMail-SwiftUIMailUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4B1190C8B1274E5937E23424 /* Pods-SwiftUIMailTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.dev.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.dev.xcconfig"; sourceTree = "<group>"; };
-		4FAF48F38C6D5E60AF1248DC /* Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig"; sourceTree = "<group>"; };
-		5407E13F1863421B0FE0779F /* Pods-SwiftUIMail-SwiftUIMailUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5853318FDF019D994B4CFF6B /* Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig"; sourceTree = "<group>"; };
-		5D829E76ABC8A46DB02EB6CE /* Pods-SwiftUIMail.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.dev.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.dev.xcconfig"; sourceTree = "<group>"; };
-		7846A22235F1B1E1395302C4 /* Pods-SwiftUIMailTests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.prod.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.prod.xcconfig"; sourceTree = "<group>"; };
+		49308079BB038B964346C2A1 /* Pods-SwiftUIMail.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.local.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.local.xcconfig"; sourceTree = "<group>"; };
+		4F1C2325176A7B24A0E08707 /* Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig"; sourceTree = "<group>"; };
+		69E2BD0106ADCFC8621AC093 /* Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig"; sourceTree = "<group>"; };
+		6EC4CA07C6E00F3B766B4A93 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIMail_SwiftUIMailUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7920C2C694675739FC7C5BE3 /* Pods-SwiftUIMail.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.prod.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.prod.xcconfig"; sourceTree = "<group>"; };
+		7C66B30EE5128CC656270D2A /* Pods-SwiftUIMailTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.dev.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.dev.xcconfig"; sourceTree = "<group>"; };
+		80425F9899FB910E1F2F8A69 /* Pods_SwiftUIMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8719797D2DA8028F0058C62F /* SwiftUIMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8719798D2DA802900058C62F /* SwiftUIMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		871979972DA802900058C62F /* SwiftUIMailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C9B45A457D2DC8F85C1DBA8 /* Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig"; sourceTree = "<group>"; };
-		B099F8324E7061ED469A59BE /* Pods_SwiftUIMail_SwiftUIMailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIMail_SwiftUIMailUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B73C4482F7DB5E361FC797D1 /* Pods-SwiftUIMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.release.xcconfig"; sourceTree = "<group>"; };
-		C474C410755CB80C67DBABCF /* Pods-SwiftUIMail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.debug.xcconfig"; sourceTree = "<group>"; };
-		F3D66C8E7CC5605A88259D83 /* Pods-SwiftUIMailTests.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.local.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.local.xcconfig"; sourceTree = "<group>"; };
+		94C869688BF974AE9D37C1E4 /* Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig"; sourceTree = "<group>"; };
+		BB45229510A74F1841196892 /* Pods-SwiftUIMail.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMail.dev.xcconfig"; path = "Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail.dev.xcconfig"; sourceTree = "<group>"; };
+		D4611A06F274F4E71A7B726A /* Pods_SwiftUIMailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIMailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80BF52F1C19BB7929B19B6D /* Pods-SwiftUIMailTests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.prod.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.prod.xcconfig"; sourceTree = "<group>"; };
+		DBE7130DA763EF09E18FCC87 /* Pods-SwiftUIMailTests.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIMailTests.local.xcconfig"; path = "Target Support Files/Pods-SwiftUIMailTests/Pods-SwiftUIMailTests.local.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -95,7 +89,7 @@
 				877350B42DBE75B7006F12C7 /* Kingfisher in Frameworks */,
 				87B05BCA2DABFD210069F851 /* RxMoya in Frameworks */,
 				87B05BC82DABFD210069F851 /* Moya in Frameworks */,
-				A9B3D4A5E6D4081D6BEB3022 /* Pods_SwiftUIMail.framework in Frameworks */,
+				EE2804FE4C4321663209861F /* Pods_SwiftUIMail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37A9792F93FDEB598D35412D /* Pods_SwiftUIMailTests.framework in Frameworks */,
+				512FCAF76EAA13DB94ED8303 /* Pods_SwiftUIMailTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,19 +105,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4945E54496C376A39657062 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework in Frameworks */,
+				C355507E8B6D777B9919F000 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		228ADA39F3C7CBFAFC132D6D /* Frameworks */ = {
+		19D9AC2A824E61BEB2A67B37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27E119CBBB6490C32E26703D /* Pods_SwiftUIMail.framework */,
-				B099F8324E7061ED469A59BE /* Pods_SwiftUIMail_SwiftUIMailUITests.framework */,
-				289FA1C397B7A4F0083145E4 /* Pods_SwiftUIMailTests.framework */,
+				80425F9899FB910E1F2F8A69 /* Pods_SwiftUIMail.framework */,
+				6EC4CA07C6E00F3B766B4A93 /* Pods_SwiftUIMail_SwiftUIMailUITests.framework */,
+				D4611A06F274F4E71A7B726A /* Pods_SwiftUIMailTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,7 +130,7 @@
 				8719799A2DA802900058C62F /* SwiftUIMailUITests */,
 				8719797E2DA8028F0058C62F /* Products */,
 				C59A3AB152A38A6C1D5B11F6 /* Pods */,
-				228ADA39F3C7CBFAFC132D6D /* Frameworks */,
+				19D9AC2A824E61BEB2A67B37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,21 +147,15 @@
 		C59A3AB152A38A6C1D5B11F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C474C410755CB80C67DBABCF /* Pods-SwiftUIMail.debug.xcconfig */,
-				B73C4482F7DB5E361FC797D1 /* Pods-SwiftUIMail.release.xcconfig */,
-				5407E13F1863421B0FE0779F /* Pods-SwiftUIMail-SwiftUIMailUITests.debug.xcconfig */,
-				3D9457CA93BF06C4910AA4B0 /* Pods-SwiftUIMail-SwiftUIMailUITests.release.xcconfig */,
-				01593107465471A07C7EA583 /* Pods-SwiftUIMailTests.debug.xcconfig */,
-				00FFC064C8F0F85322B31672 /* Pods-SwiftUIMailTests.release.xcconfig */,
-				23F91A5254FF884B9687F392 /* Pods-SwiftUIMail.local.xcconfig */,
-				5D829E76ABC8A46DB02EB6CE /* Pods-SwiftUIMail.dev.xcconfig */,
-				2B7D24D9F341B66D2EE6A744 /* Pods-SwiftUIMail.prod.xcconfig */,
-				5853318FDF019D994B4CFF6B /* Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig */,
-				4FAF48F38C6D5E60AF1248DC /* Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig */,
-				9C9B45A457D2DC8F85C1DBA8 /* Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig */,
-				F3D66C8E7CC5605A88259D83 /* Pods-SwiftUIMailTests.local.xcconfig */,
-				4B1190C8B1274E5937E23424 /* Pods-SwiftUIMailTests.dev.xcconfig */,
-				7846A22235F1B1E1395302C4 /* Pods-SwiftUIMailTests.prod.xcconfig */,
+				49308079BB038B964346C2A1 /* Pods-SwiftUIMail.local.xcconfig */,
+				BB45229510A74F1841196892 /* Pods-SwiftUIMail.dev.xcconfig */,
+				7920C2C694675739FC7C5BE3 /* Pods-SwiftUIMail.prod.xcconfig */,
+				4F1C2325176A7B24A0E08707 /* Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig */,
+				69E2BD0106ADCFC8621AC093 /* Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig */,
+				94C869688BF974AE9D37C1E4 /* Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig */,
+				DBE7130DA763EF09E18FCC87 /* Pods-SwiftUIMailTests.local.xcconfig */,
+				7C66B30EE5128CC656270D2A /* Pods-SwiftUIMailTests.dev.xcconfig */,
+				D80BF52F1C19BB7929B19B6D /* Pods-SwiftUIMailTests.prod.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -179,11 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 871979A12DA802900058C62F /* Build configuration list for PBXNativeTarget "SwiftUIMail" */;
 			buildPhases = (
-				5A20ECC7DB8980DE78048DB1 /* [CP] Check Pods Manifest.lock */,
+				0DDE9A6F37BAEEE7D16C8140 /* [CP] Check Pods Manifest.lock */,
 				871979792DA8028F0058C62F /* Sources */,
 				8719797A2DA8028F0058C62F /* Frameworks */,
 				8719797B2DA8028F0058C62F /* Resources */,
-				42DB779648BB37037FBEFA81 /* [CP] Copy Pods Resources */,
+				E97CCF5070A37F4381CCDF32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,7 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 871979A42DA802900058C62F /* Build configuration list for PBXNativeTarget "SwiftUIMailTests" */;
 			buildPhases = (
-				2B9271E3421156288B7947EC /* [CP] Check Pods Manifest.lock */,
+				3B3F564EB2D33B2F38B06952 /* [CP] Check Pods Manifest.lock */,
 				871979892DA802900058C62F /* Sources */,
 				8719798A2DA802900058C62F /* Frameworks */,
 				8719798B2DA802900058C62F /* Resources */,
@@ -228,11 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 871979A72DA802900058C62F /* Build configuration list for PBXNativeTarget "SwiftUIMailUITests" */;
 			buildPhases = (
-				D77FAC9D7D770FF4FD4B5C20 /* [CP] Check Pods Manifest.lock */,
+				ED3B1FB9C6ECAD2C1D9272F1 /* [CP] Check Pods Manifest.lock */,
 				871979932DA802900058C62F /* Sources */,
 				871979942DA802900058C62F /* Frameworks */,
 				871979952DA802900058C62F /* Resources */,
-				476800D52D7E5990A2DD0A58 /* [CP] Copy Pods Resources */,
+				C691980BB887741B67CED433 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,7 +243,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					8719797C2DA8028F0058C62F = {
 						CreatedOnToolsVersion = 16.0;
@@ -276,6 +264,7 @@
 			knownRegions = (
 				en,
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = 871979742DA8028F0058C62F;
 			minimizedProjectReferenceProxies = 1;
@@ -320,63 +309,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B9271E3421156288B7947EC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUIMailTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42DB779648BB37037FBEFA81 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		476800D52D7E5990A2DD0A58 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A20ECC7DB8980DE78048DB1 /* [CP] Check Pods Manifest.lock */ = {
+		0DDE9A6F37BAEEE7D16C8140 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,7 +331,71 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D77FAC9D7D770FF4FD4B5C20 /* [CP] Check Pods Manifest.lock */ = {
+		3B3F564EB2D33B2F38B06952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIMailTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C691980BB887741B67CED433 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E97CCF5070A37F4381CCDF32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3B1FB9C6ECAD2C1D9272F1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,6 +462,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -495,9 +493,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -526,17 +526,16 @@
 		};
 		877A55E52DC2584E006F2CF0 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D829E76ABC8A46DB02EB6CE /* Pods-SwiftUIMail.dev.xcconfig */;
+			baseConfigurationReference = BB45229510A74F1841196892 /* Pods-SwiftUIMail.dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMail/Preview Content\"";
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -561,12 +560,11 @@
 		};
 		877A55E62DC2584E006F2CF0 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B1190C8B1274E5937E23424 /* Pods-SwiftUIMailTests.dev.xcconfig */;
+			baseConfigurationReference = 7C66B30EE5128CC656270D2A /* Pods-SwiftUIMailTests.dev.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -581,11 +579,10 @@
 		};
 		877A55E72DC2584E006F2CF0 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FAF48F38C6D5E60AF1248DC /* Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig */;
+			baseConfigurationReference = 69E2BD0106ADCFC8621AC093 /* Pods-SwiftUIMail-SwiftUIMailUITests.dev.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoverchen.SwiftUIMailUITests;
@@ -602,6 +599,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -632,9 +630,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -663,17 +663,16 @@
 		};
 		877A55E92DC25855006F2CF0 /* Local */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23F91A5254FF884B9687F392 /* Pods-SwiftUIMail.local.xcconfig */;
+			baseConfigurationReference = 49308079BB038B964346C2A1 /* Pods-SwiftUIMail.local.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMail/Preview Content\"";
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -698,12 +697,11 @@
 		};
 		877A55EA2DC25855006F2CF0 /* Local */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3D66C8E7CC5605A88259D83 /* Pods-SwiftUIMailTests.local.xcconfig */;
+			baseConfigurationReference = DBE7130DA763EF09E18FCC87 /* Pods-SwiftUIMailTests.local.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -718,11 +716,10 @@
 		};
 		877A55EB2DC25855006F2CF0 /* Local */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5853318FDF019D994B4CFF6B /* Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig */;
+			baseConfigurationReference = 4F1C2325176A7B24A0E08707 /* Pods-SwiftUIMail-SwiftUIMailUITests.local.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoverchen.SwiftUIMailUITests;
@@ -739,6 +736,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -769,9 +767,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -794,17 +794,16 @@
 		};
 		877A55ED2DC2585D006F2CF0 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B7D24D9F341B66D2EE6A744 /* Pods-SwiftUIMail.prod.xcconfig */;
+			baseConfigurationReference = 7920C2C694675739FC7C5BE3 /* Pods-SwiftUIMail.prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMail/Preview Content\"";
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -829,12 +828,11 @@
 		};
 		877A55EE2DC2585D006F2CF0 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7846A22235F1B1E1395302C4 /* Pods-SwiftUIMailTests.prod.xcconfig */;
+			baseConfigurationReference = D80BF52F1C19BB7929B19B6D /* Pods-SwiftUIMailTests.prod.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -849,11 +847,10 @@
 		};
 		877A55EF2DC2585D006F2CF0 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C9B45A457D2DC8F85C1DBA8 /* Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig */;
+			baseConfigurationReference = 94C869688BF974AE9D37C1E4 /* Pods-SwiftUIMail-SwiftUIMailUITests.prod.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U9AAGW6354;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoverchen.SwiftUIMailUITests;
