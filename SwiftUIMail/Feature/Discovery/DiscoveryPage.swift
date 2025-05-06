@@ -12,7 +12,7 @@ struct DiscoveryPage: View {
     var body: some View {
         DiscoveryPageContent(
             leftClick: {}, searchClick: {}, rightClick: {},
-            datum: Product.PREVIEW_DATUM)
+            datum: viewModel.datum)
     }
 }
 
