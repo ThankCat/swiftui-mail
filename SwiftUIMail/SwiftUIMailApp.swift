@@ -12,7 +12,10 @@ struct SwiftUIMailApp: App {
     @ObservedObject var appState = AppState.shared
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // 使用 NavigtionStack 管理导航路径
+            NavigationStack(path: $appState.rootNavigationPath) {
+                ContentView()
+            }
         }
         .environmentObject(appState)
     }

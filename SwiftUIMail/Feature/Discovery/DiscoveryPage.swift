@@ -11,8 +11,11 @@ struct DiscoveryPage: View {
     @StateObject var viewModel: DiscoveryViewModel
     var body: some View {
         DiscoveryPageContent(
-            leftClick: {}, searchClick: {}, rightClick: {},
-            datum: viewModel.datum)
+            leftClick: {},
+            searchClick: {},
+            rightClick: {},
+            datum: viewModel.datum
+        )
     }
 }
 
@@ -25,15 +28,37 @@ struct DiscoveryPageContent: View {
     var body: some View {
         VStack(spacing: 0) {
             DiscoveryNavigationTitle(
-                leftClick: {}, searchClick: {}, rightClick: {})
+                leftClick: {},
+                searchClick: {},
+                rightClick: {}
+            )
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVStack(
                     spacing: 0,
                     content: {
                         ForEach(datum, id: \.id) { item in
-                            ItemProduct(data: item)
+                            // 第一种跳转方式
+                            NavigationLink(
+                                value: NavigationDestination.ProductDetail(
+                                    id: item.id
+                                )
+                            ) {
+                                ItemProduct(data: item)
+                            }
+
+                            // 第二种跳转方式: 原页面会下沉
+                            //                            ItemProduct(data: item)
+                            //                                .onTapGesture {
+                            //                                    AppState.shared.navigate(
+                            //                                        NavigationDestination.ProductDetail(
+                            //                                            id: item.id
+                            //                                        )
+                            //                                    )
+                            //                                }
+
                         }
-                    })
+                    }
+                )
             }
         }
         .background(.background2)
@@ -67,7 +92,8 @@ struct DiscoveryNavigationTitle: View {
                         .foregroundStyle(.outline)
                 }
                 .frame(
-                    maxWidth: .infinity, minHeight: NavigationBarSearchHeight
+                    maxWidth: .infinity,
+                    minHeight: NavigationBarSearchHeight
                 )
                 .background(.surfaceVariant)
                 .clipShape(extraLargeShape)
@@ -87,6 +113,9 @@ struct DiscoveryNavigationTitle: View {
 
 #Preview {
     DiscoveryPageContent(
-        leftClick: {}, searchClick: {}, rightClick: {},
-        datum: Product.PREVIEW_DATUM)
+        leftClick: {},
+        searchClick: {},
+        rightClick: {},
+        datum: Product.PREVIEW_DATUM
+    )
 }

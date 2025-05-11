@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct ProdcutDetailPage: View {
+struct ProductDetailPage: View {
+    @StateObject var viewModel: ProductDetailViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(viewModel.id)
+//        ProductDetailPageContent()
+    }
+}
+
+struct ProductDetailPageContent: View {
+    var body: some View {
+        Text("商品详情")
     }
 }
 
 #Preview {
-    ProdcutDetailPage()
+    ProductDetailPageContent()
 }

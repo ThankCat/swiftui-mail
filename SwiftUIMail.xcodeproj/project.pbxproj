@@ -71,15 +71,11 @@
 		};
 		871979902DA802900058C62F /* SwiftUIMailTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SwiftUIMailTests;
 			sourceTree = "<group>";
 		};
 		8719799A2DA802900058C62F /* SwiftUIMailUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SwiftUIMailUITests;
 			sourceTree = "<group>";
 		};
@@ -365,9 +361,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail-SwiftUIMailUITests/Pods-SwiftUIMail-SwiftUIMailUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -382,9 +382,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIMail/Pods-SwiftUIMail-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
