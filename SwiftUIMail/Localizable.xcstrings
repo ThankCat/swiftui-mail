@@ -147,6 +147,23 @@
         }
       }
     },
+    "SentTo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sent To"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "送至"
+          }
+        }
+      }
+    },
     "Short Video" : {
       "localizations" : {
         "en" : {
@@ -196,6 +213,23 @@
         }
       }
     },
+    "Store" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "商店"
+          }
+        }
+      }
+    },
     "WifiProload" : {
       "localizations" : {
         "en" : {
@@ -208,6 +242,25 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "WiFi 预加载"
+          }
+        }
+      }
+    },
+    "人生苦短 我用Python" : {
+
+    },
+    "底部按钮" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottom Buttom"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "底部按钮"
           }
         }
       }

@@ -39,6 +39,7 @@ struct ItemProduct: View {
                     .font(.titleSmall)
                     .lineLimit(2)
                     .foregroundStyle(.onSurface)
+                    .multilineTextAlignment(.leading) // 强制文本左对齐
 
                 SpaceExtraMediumHeightView()
 
