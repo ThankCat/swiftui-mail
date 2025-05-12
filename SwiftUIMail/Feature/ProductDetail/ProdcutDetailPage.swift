@@ -10,17 +10,17 @@ import SwiftUI
 struct ProductDetailPage: View {
     @StateObject var viewModel: ProductDetailViewModel
     var body: some View {
-        Text(viewModel.id)
-//        ProductDetailPageContent()
+        ProductDetailPageContent(data: viewModel.data)
     }
 }
 
 struct ProductDetailPageContent: View {
+    var data: Product?
     var body: some View {
-        Text("商品详情")
+        Text(data?.title ?? "加载中")
     }
 }
 
 #Preview {
-    ProductDetailPageContent()
+    ProductDetailPageContent(data: .PREVIEW_DATA)
 }

@@ -85,4 +85,12 @@ class MyNetworkRespository {
         // 返回响应结果
         return r
     }
+    
+    
+    /// 请求商品详情
+    /// - Parameter id: 商品ID
+    /// - Returns: 返回商品详情的异步响应
+    public func productDetail(_ id: String) async throws -> DetailResponse<Product>? {
+        return try await provider.runRequest(.productDetail(id: id))
+    }
 }

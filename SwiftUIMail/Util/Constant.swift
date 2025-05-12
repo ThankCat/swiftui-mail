@@ -16,4 +16,6 @@ struct Constant {
     static let VALUE20 = 20
     static let VALUE30 = 30
     static let VALUE40 = 40
+
+    static let ID = "id"
 }

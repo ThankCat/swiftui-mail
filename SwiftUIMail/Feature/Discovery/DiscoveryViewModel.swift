@@ -21,7 +21,6 @@ class DiscoveryViewModel: ObservableObject {
         Task {
             do {
                 let r = try await MyNetworkRespository.shared.products()
-                print(r!.data!.list![0].title)
                 
                 Task { @MainActor in
                     datum.removeAll()

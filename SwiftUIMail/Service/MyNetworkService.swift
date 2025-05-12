@@ -13,6 +13,9 @@ enum MyNetworkService {
     // 获取商品列表，请求参数为字典类型
     case products(data: [String: Any])
 
+    // 商品详情
+    case productDetail(id: String)
+
     // 获取用户详情，请求参数为用户 ID
     case userDetail(id: String)
 
@@ -33,6 +36,8 @@ extension MyNetworkService: TargetType {
         switch self {
         case .products:
             return "v1/products/page"  // 商品分页接口
+        case .productDetail:
+            return "v1/products/info"  // 商品详情
         case .userDetail:
             return "v1/users/info"  // 用户信息接口
         case .register:
@@ -45,6 +50,8 @@ extension MyNetworkService: TargetType {
         switch self {
         case .products:
             return .get  // 获取商品使用 GET
+        case .productDetail:
+            return .get
         case .userDetail:
             return .get  // 获取用户详情使用 GET
         case .register:
@@ -61,9 +68,16 @@ extension MyNetworkService: TargetType {
                 parameters: data,
                 encoding: URLEncoding.queryString
             )
+        case .productDetail(let id):
+            return .requestParameters(
+                parameters: [Constant.ID: id],
+                encoding: URLEncoding.queryString
+            )
         case .userDetail(let id):
             return .requestParameters(
-                parameters: ["id": id], encoding: URLEncoding.queryString)
+                parameters: [Constant.ID: id],
+                encoding: URLEncoding.queryString
+            )
         case .register(let data):
             // 将用户数据作为 JSON 编码发送
             return .requestJSONEncodable(data)
