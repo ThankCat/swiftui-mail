@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		512FCAF76EAA13DB94ED8303 /* Pods_SwiftUIMailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4611A06F274F4E71A7B726A /* Pods_SwiftUIMailTests.framework */; };
+		8164ADA02DDB65F4009E45D7 /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 8164AD9F2DDB65F4009E45D7 /* RichText */; };
 		877350B42DBE75B7006F12C7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 877350B32DBE75B7006F12C7 /* Kingfisher */; };
 		87B05BC82DABFD210069F851 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 87B05BC72DABFD210069F851 /* Moya */; };
 		87B05BCA2DABFD210069F851 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87B05BC92DABFD210069F851 /* RxMoya */; };
@@ -89,6 +90,7 @@
 				877350B42DBE75B7006F12C7 /* Kingfisher in Frameworks */,
 				87B05BCA2DABFD210069F851 /* RxMoya in Frameworks */,
 				87B05BC82DABFD210069F851 /* Moya in Frameworks */,
+				8164ADA02DDB65F4009E45D7 /* RichText in Frameworks */,
 				EE2804FE4C4321663209861F /* Pods_SwiftUIMail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +187,7 @@
 				87B05BC72DABFD210069F851 /* Moya */,
 				87B05BC92DABFD210069F851 /* RxMoya */,
 				877350B32DBE75B7006F12C7 /* Kingfisher */,
+				8164AD9F2DDB65F4009E45D7 /* RichText */,
 			);
 			productName = SwiftUIMail;
 			productReference = 8719797D2DA8028F0058C62F /* SwiftUIMail.app */;
@@ -271,6 +274,7 @@
 			packageReferences = (
 				87B05BC62DABFCA90069F851 /* XCRemoteSwiftPackageReference "Moya" */,
 				877350B22DBE75B7006F12C7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8164AD9E2DDB65F4009E45D7 /* XCRemoteSwiftPackageReference "RichText" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8719797E2DA8028F0058C62F /* Products */;
@@ -910,6 +914,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8164AD9E2DDB65F4009E45D7 /* XCRemoteSwiftPackageReference "RichText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NuPlay/RichText";
+			requirement = {
+				kind = exactVersion;
+				version = 2.4.1;
+			};
+		};
 		877350B22DBE75B7006F12C7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -929,6 +941,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8164AD9F2DDB65F4009E45D7 /* RichText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8164AD9E2DDB65F4009E45D7 /* XCRemoteSwiftPackageReference "RichText" */;
+			productName = RichText;
+		};
 		877350B32DBE75B7006F12C7 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 877350B22DBE75B7006F12C7 /* XCRemoteSwiftPackageReference "Kingfisher" */;

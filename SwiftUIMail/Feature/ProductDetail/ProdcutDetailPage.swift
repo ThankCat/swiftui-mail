@@ -7,6 +7,7 @@
 
 import Kingfisher
 import SwiftUI
+import RichText
 
 struct ProductDetailPage: View {
     @StateObject var viewModel: ProductDetailViewModel
@@ -47,6 +48,24 @@ struct ProductDetailPageContent: View {
                         // 商家信息
                         SpaceExtraMediumView()
                         MerchantInfo(data: data.user ?? User.PREVIEW_DATA)
+                        
+                        // 富文本 TODO: 去除图片之间的分割线
+                        SpaceExtraMediumView()
+                        RichText(html: StringUtil.formatHTML(data.detail ?? ""))
+                            .colorScheme(.auto)
+                            .fontType(.system)
+                            .foregroundColor(light: Color.primary, dark: Color.primary)
+                            .linkColor(light: Color.blue, dark: Color.blue)
+                            .colorPreference(forceColor: .onlyLinks)
+                            .linkOpenType(.SFSafariView())
+                            .customCSS("")
+                            .placeholder {
+                                Text("Loading")
+                            }
+                            .transition(.easeOut)
+                        
+                        SpaceExtraMediumView()
+
                     }
                 }
 

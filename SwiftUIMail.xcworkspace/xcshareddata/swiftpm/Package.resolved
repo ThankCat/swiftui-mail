@@ -1,5 +1,5 @@
 {
-  "originHash" : "c328b0d55769e13ee33447a788ae5a2ceac238a09396042a87c3cd58033a2a67",
+  "originHash" : "b5120fa3646837d029839cda869af58e7f2ab54781ba01844f9c5b99b6d39a68",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
         "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "richtext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NuPlay/RichText",
+      "state" : {
+        "revision" : "8abbc59142523ac18f36fcf07414c2f85a2e75ae",
+        "version" : "2.4.1"
       }
     },
     {
