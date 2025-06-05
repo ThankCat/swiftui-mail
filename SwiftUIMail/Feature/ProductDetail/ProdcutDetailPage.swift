@@ -16,9 +16,13 @@ struct ProductDetailPage: View {
             data: .PREVIEW_DATA,
             primaryClick: {},
             addCartClick: {},
-            chartClick: {}
+            chartClick: {},
+            backClick: {
+                AppState.shared.finishPage()
+            }
         )
         .background(.background2)
+        .navigationBarBackButtonHidden()
     }
 }
 
@@ -27,40 +31,45 @@ struct ProductDetailPageContent: View {
     var primaryClick: () -> Void
     var addCartClick: () -> Void
     var chartClick: () -> Void
+    var backClick: () -> Void
+
+    @State var scrollOffset: CGFloat = 0
 
     var body: some View {
-        if let data {
+        ZStack {
+            if let data {
+                VStack(spacing: 0) {
+                    ScrollView {
+                        VStack(spacing: 0) {
+                            // 顶部轮播图
+                            ProductDetailBanner(datum: data.icons)
 
-            VStack(spacing: 0) {
-                ScrollView {
-                    VStack(spacing: 0) {
-                        // 顶部轮播图
-                        ProductDetailBanner(datum: data.icons)
+                            // 商品详情
+                            ProductDetailInfo(data: data)
 
-                        // 商品详情
-                        ProductDetailInfo(data: data)
+                            // 地址
+                            SpaceExtraMediumView()
+                            MyProductSettingItem(
+                                title: LocalizedString("SentTo"),
+                                value: "四川省 成都市 高新区"
+                            )
 
-                        // 地址
-                        SpaceExtraMediumView()
-                        MyProductSettingItem(
-                            title: LocalizedString("SentTo"),
-                            value: "四川省 成都市 高新区"
-                        )
+                            // 店铺
+                            SpaceExtraMediumView()
+                            MyProductSettingItem(
+                                title: LocalizedString("Store"),
+                                value: "小米之家成都印象城专卖店"
+                            )
 
-                        // 店铺
-                        SpaceExtraMediumView()
-                        MyProductSettingItem(
-                            title: LocalizedString("Store"),
-                            value: "小米之家成都印象城专卖店"
-                        )
+                            // 商家信息
+                            SpaceExtraMediumView()
+                            MerchantInfo(data: data.user ?? User.PREVIEW_DATA)
 
-                        // 商家信息
-                        SpaceExtraMediumView()
-                        MerchantInfo(data: data.user ?? User.PREVIEW_DATA)
-
-                        // 富文本 TODO: 去除图片之间的分割线
-                        SpaceExtraMediumView()
-                        RichText(html: StringUtil.formatHTML(data.detail ?? ""))
+                            // 富文本 TODO: 去除图片之间的分割线
+                            SpaceExtraMediumView()
+                            RichText(
+                                html: StringUtil.formatHTML(data.detail ?? "")
+                            )
                             .colorScheme(.auto)
                             .fontType(.system)
                             .foregroundColor(
@@ -76,48 +85,92 @@ struct ProductDetailPageContent: View {
                             }
                             .transition(.easeOut)
 
-                        SpaceExtraMediumView()
+                            SpaceExtraMediumView()
 
-                    }
-                }
-
-                // 底部按钮
-                MyProductDetailBottomBar(
-                    primaryClick: primaryClick,
-                    addCartClick: addCartClick
-                ) {
-                    HStack {
-                        Button(action: chartClick) {
-                            VStack {
-                                Image(systemName: "headphones")
-                                Spacer().frame(height: 3)
-                                Text("Customer Service")
-                                    .font(.bodySmall)
-                                    .foregroundStyle(.onSurface)
-                            }
-                            .foregroundStyle(.onSurface)
                         }
-
-                        SpacerOuterWidthView()
-
-                        Button(action: {}) {
-                            VStack {
-                                Image(systemName: "cart")
-                                Spacer().frame(height: 3)
-                                Text("Cart")
-                                    .font(.bodySmall)
-                                    .foregroundStyle(.onSurface)
-                            }
-                            .foregroundStyle(.onSurface)
-                        }
-
-                        SpacerOuterWidthView()
                     }
-                }
 
+                    // 底部按钮
+                    MyProductDetailBottomBar(
+                        primaryClick: primaryClick,
+                        addCartClick: addCartClick
+                    ) {
+                        HStack {
+                            Button(action: chartClick) {
+                                VStack {
+                                    Image(systemName: "headphones")
+                                    Spacer().frame(height: 3)
+                                    Text("Customer Service")
+                                        .font(.bodySmall)
+                                        .foregroundStyle(.onSurface)
+                                }
+                                .foregroundStyle(.onSurface)
+                            }
+
+                            SpacerOuterWidthView()
+
+                            Button(action: {}) {
+                                VStack {
+                                    Image(systemName: "cart")
+                                    Spacer().frame(height: 3)
+                                    Text("Cart")
+                                        .font(.bodySmall)
+                                        .foregroundStyle(.onSurface)
+                                }
+                                .foregroundStyle(.onSurface)
+                            }
+
+                            SpacerOuterWidthView()
+                        }
+                    }
+
+                }
+                .ignoresSafeArea(edges: .top)
+
+                // 导航栏
+                ProdcutDettailNavigationBar(
+                    backClick: backClick,
+                    scrollOffset: scrollOffset,
+                    id: data.id
+                )
             }
 
         }
+    }
+}
+
+// MARK: - 导航栏
+struct ProdcutDettailNavigationBar: View {
+    var backClick: () -> Void
+    var scrollOffset: CGFloat
+    var id: String
+
+    var body: some View {
+        let iconColor: Color = .white
+
+        VStack {
+            HStack {
+                Button(action: backClick) {
+                    Image(systemName: "chevron.left.circle.fill")
+                        .foregroundStyle(iconColor)
+                        .font(.title3XLarge)
+                }
+
+                Spacer()
+
+                Button(action: backClick) {
+                    Image(systemName: "square.and.arrow.up.circle.fill")
+                        .foregroundStyle(iconColor)
+                        .font(.title3XLarge)
+                }
+            }
+            .padding(.horizontal, SpaceOuter)
+            .frame(height: NavigationBarHeight)
+            .background(.white.opacity(0.5))
+
+            Spacer()
+        }
+
     }
 }
 
@@ -284,7 +337,10 @@ struct MerchantInfo: View {
         data: .PREVIEW_DATA,
         primaryClick: {},
         addCartClick: {},
-        chartClick: {}
+        chartClick: {},
+        backClick: {
+            AppState.shared.finishPage()
+        }
     )
     .background(.background2)
 }
