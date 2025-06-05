@@ -1,6 +1,38 @@
 {
   "sourceLanguage" : "zh-Hans",
   "strings" : {
+    "Add Cart" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Cart"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加入购物车"
+          }
+        }
+      }
+    },
+    "Buy Now" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy Now"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "立即购买"
+          }
+        }
+      }
+    },
     "Cart" : {
       "localizations" : {
         "en" : {
@@ -65,6 +97,22 @@
         }
       }
     },
+    "Customer Service" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customer"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "客服"
+          }
+        }
+      }
+    },
     "Discovery" : {
       "localizations" : {
         "en" : {
@@ -99,7 +147,20 @@
       }
     },
     "Loading" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加载中"
+          }
+        }
+      }
     },
     "Me" : {
       "localizations" : {
@@ -250,20 +311,17 @@
       }
     },
     "人生苦短 我用Python" : {
-
-    },
-    "底部按钮" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bottom Buttom"
+            "value" : "Life is short I use python"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "底部按钮"
+            "value" : "人生苦短 我用Python"
           }
         }
       }

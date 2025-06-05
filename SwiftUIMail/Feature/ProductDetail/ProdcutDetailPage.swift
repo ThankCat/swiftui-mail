@@ -6,19 +6,28 @@
 //
 
 import Kingfisher
-import SwiftUI
 import RichText
+import SwiftUI
 
 struct ProductDetailPage: View {
     @StateObject var viewModel: ProductDetailViewModel
     var body: some View {
-        ProductDetailPageContent(data: viewModel.data)
-            .background(.background2)
+        ProductDetailPageContent(
+            data: .PREVIEW_DATA,
+            primaryClick: {},
+            addCartClick: {},
+            chartClick: {}
+        )
+        .background(.background2)
     }
 }
 
 struct ProductDetailPageContent: View {
     var data: Product?
+    var primaryClick: () -> Void
+    var addCartClick: () -> Void
+    var chartClick: () -> Void
+
     var body: some View {
         if let data {
 
@@ -48,13 +57,16 @@ struct ProductDetailPageContent: View {
                         // 商家信息
                         SpaceExtraMediumView()
                         MerchantInfo(data: data.user ?? User.PREVIEW_DATA)
-                        
+
                         // 富文本 TODO: 去除图片之间的分割线
                         SpaceExtraMediumView()
                         RichText(html: StringUtil.formatHTML(data.detail ?? ""))
                             .colorScheme(.auto)
                             .fontType(.system)
-                            .foregroundColor(light: Color.primary, dark: Color.primary)
+                            .foregroundColor(
+                                light: Color.primary,
+                                dark: Color.primary
+                            )
                             .linkColor(light: Color.blue, dark: Color.blue)
                             .colorPreference(forceColor: .onlyLinks)
                             .linkOpenType(.SFSafariView())
@@ -63,14 +75,46 @@ struct ProductDetailPageContent: View {
                                 Text("Loading")
                             }
                             .transition(.easeOut)
-                        
+
                         SpaceExtraMediumView()
 
                     }
                 }
 
                 // 底部按钮
-                Text("底部按钮")
+                MyProductDetailBottomBar(
+                    primaryClick: primaryClick,
+                    addCartClick: addCartClick
+                ) {
+                    HStack {
+                        Button(action: chartClick) {
+                            VStack {
+                                Image(systemName: "headphones")
+                                Spacer().frame(height: 3)
+                                Text("Customer Service")
+                                    .font(.bodySmall)
+                                    .foregroundStyle(.onSurface)
+                            }
+                            .foregroundStyle(.onSurface)
+                        }
+
+                        SpacerOuterWidthView()
+
+                        Button(action: {}) {
+                            VStack {
+                                Image(systemName: "cart")
+                                Spacer().frame(height: 3)
+                                Text("Cart")
+                                    .font(.bodySmall)
+                                    .foregroundStyle(.onSurface)
+                            }
+                            .foregroundStyle(.onSurface)
+                        }
+
+                        SpacerOuterWidthView()
+                    }
+                }
+
             }
 
         }
@@ -236,6 +280,11 @@ struct MerchantInfo: View {
 }
 
 #Preview {
-    ProductDetailPageContent(data: .PREVIEW_DATA)
-        .background(.background2)
+    ProductDetailPageContent(
+        data: .PREVIEW_DATA,
+        primaryClick: {},
+        addCartClick: {},
+        chartClick: {}
+    )
+    .background(.background2)
 }
