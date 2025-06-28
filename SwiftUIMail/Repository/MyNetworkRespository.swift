@@ -23,15 +23,15 @@ class MyNetworkRespository {
         var plugins: [PluginType] = []
 
         // 如果处于调试模式（DEBUG 为 true），添加网络日志插件
-        if Config.DEBUG {
-            plugins.append(
-                NetworkLoggerPlugin(
-                    configuration: NetworkLoggerPlugin.Configuration(
-                        logOptions: .successResponseBody // 仅打印成功响应的 body
-                    )
-                )
-            )
-        }
+//        if Config.DEBUG {
+//            plugins.append(
+//                NetworkLoggerPlugin(
+//                    configuration: NetworkLoggerPlugin.Configuration(
+//                        logOptions: .successResponseBody // 仅打印成功响应的 body
+//                    )
+//                )
+//            )
+//        }
 
         /// 自定义请求构造闭包，用于设置请求属性，例如超时时间
         let requestClosure = {

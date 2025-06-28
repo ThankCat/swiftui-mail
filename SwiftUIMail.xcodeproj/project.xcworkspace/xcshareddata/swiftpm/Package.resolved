@@ -1,5 +1,5 @@
 {
-  "originHash" : "8f916f5d4326b71e39effcaaa3b5d19d894467a03c60c9c5033a4bfc3cfd2d9c",
+  "originHash" : "b5120fa3646837d029839cda869af58e7f2ab54781ba01844f9c5b99b6d39a68",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
         "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "7deda23bbdca612076c5c315003d8638a08ed0f1",
+        "version" : "8.3.2"
       }
     },
     {
@@ -26,6 +35,15 @@
       "state" : {
         "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
         "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "richtext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NuPlay/RichText",
+      "state" : {
+        "revision" : "8abbc59142523ac18f36fcf07414c2f85a2e75ae",
+        "version" : "2.4.1"
       }
     },
     {

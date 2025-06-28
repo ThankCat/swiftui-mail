@@ -26,6 +26,7 @@ struct ProductDetailPage: View {
     }
 }
 
+/// 商品详情页面内容
 struct ProductDetailPageContent: View {
     var data: Product?
     var primaryClick: () -> Void
@@ -39,7 +40,9 @@ struct ProductDetailPageContent: View {
         ZStack {
             if let data {
                 VStack(spacing: 0) {
-                    ScrollView {
+                    ScrollViewOffset(onOffsetChange: { offset in
+                        scrollOffset = offset
+                    }) {
                         VStack(spacing: 0) {
                             // 顶部轮播图
                             ProductDetailBanner(datum: data.icons)
@@ -146,7 +149,8 @@ struct ProdcutDettailNavigationBar: View {
     var id: String
 
     var body: some View {
-        let iconColor: Color = .white
+        let opacity: Double = min(1, max(0, -scrollOffset / 100))
+        let iconColor: Color = opacity > 0.5 ? Color.black : Color.white
 
         VStack {
             HStack {
@@ -166,11 +170,10 @@ struct ProdcutDettailNavigationBar: View {
             }
             .padding(.horizontal, SpaceOuter)
             .frame(height: NavigationBarHeight)
-            .background(.white.opacity(0.5))
+            .background(.white.opacity(opacity))
 
             Spacer()
         }
-
     }
 }
 
