@@ -16,7 +16,7 @@ struct ContentView: View {
                 case .ProductDetail(let id):
                     ProductDetailPage(viewModel: .init(id: id))
                 case .LoginHome:
-                    EmptyView()
+                    LoginHomePage()
                 }
             }
     }

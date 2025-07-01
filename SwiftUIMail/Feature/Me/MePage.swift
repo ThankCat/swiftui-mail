@@ -9,10 +9,23 @@ import SwiftUI
 
 struct MePage: View {
     var body: some View {
-        Text("MePage")
+        MePageContent(userInfoClick: {
+            AppState.shared.navigate(.LoginHome)
+        })
+    }
+}
+
+
+struct MePageContent: View {
+    var userInfoClick: () -> Void
+    
+    var body: some View {
+        Button(action: userInfoClick) {
+            Text("Login")
+        }
     }
 }
 
 #Preview {
-    MePage()
+    MePageContent(userInfoClick: {})
 }

@@ -97,6 +97,22 @@
         }
       }
     },
+    "Code Login" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code Login"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "验证码登陆"
+          }
+        }
+      }
+    },
     "Customer Service" : {
       "localizations" : {
         "en" : {
@@ -162,6 +178,22 @@
         }
       }
     },
+    "Login" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登陆"
+          }
+        }
+      }
+    },
     "Me" : {
       "localizations" : {
         "en" : {
@@ -178,18 +210,18 @@
         }
       }
     },
-    "MePage" : {
+    "Password Login" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MePage"
+            "value" : "Password Login"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "我的页"
+            "value" : "用户名和密码登录"
           }
         }
       }
