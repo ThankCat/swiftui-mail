@@ -10,8 +10,8 @@ import Foundation
 class Config {
     #if DEBUG
         /**
-     * 是否为调试模式
-     */
+         * 是否为调试模式
+         */
         static let DEBUG = true
     #else
         static let DEBUG = false
@@ -22,23 +22,27 @@ class Config {
         static let ENDPOINT = "http://quick-server-sp.ixuea.com"
 
         /**
-     * 资源端点
-     */
+         * 资源端点
+         */
         static let RESOURCE_ENDPOINT = "http://rs.ixuea.com/quick/"
+
     #elseif LOCAL
         static let ENDPOINT = "http://192.168.1.1:89520"
 
         /**
-     * 资源端点
-     */
+         * 资源端点
+         */
         static let RESOURCE_ENDPOINT = "http://rs.ixuea.com/quick/"
     #else
 
         static let ENDPOINT = "https://www.chenhao.com"
 
         /**
-     * 资源端点
-     */
+         * 资源端点
+         */
         static let RESOURCE_ENDPOINT = "http://rs.ixuea.com/quick/"
     #endif
+
+    static let LINK_USER_USER_AGREEMENT = "https://www.ixuea.com/articles/4449"
+    static let LINK_USER_PRIVACY_POLICY = "https://www.ixuea.com/articles/4467"
 }

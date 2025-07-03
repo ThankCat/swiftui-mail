@@ -11,7 +11,15 @@ struct LoginHomePage: View {
     @StateObject var viewModel = LoginHomeViewModel()
 
     var body: some View {
-        LoginHomePageContent {} toCodeLogin: {} qqLogin: {} wechatLogin: {}
+        LoginHomePageContent(toLogin: {},
+                             toCodeLogin: {},
+                             qqLogin: {},
+                             wechatLogin: {})
+//            .navigationTitle("Login Home")
+            .navigationBarBackButtonHidden(true)
+            .toolbar{
+                MyBackButton()
+            }
     }
 }
 
@@ -67,6 +75,9 @@ struct LoginHomePageContent: View {
                     Spacer()
                     OtherLoginButton(icon: "PassportSnsGoogle", active: {})
                 }
+
+                // 用户协议
+                UserAgreement()
             }
         }
         .padding()
@@ -90,6 +101,38 @@ struct OtherLoginButton: View {
 //                    active()
 //                }
         }
+    }
+}
+
+// MARK: - 用户协议
+
+struct UserAgreement: View {
+    var body: some View {
+        Text(makeAttributedText())
+            .font(.bodySmall)
+            .foregroundStyle(.outline)
+    }
+
+    /// 创建用户协议的富文本
+    /// - Returns: 返回一个包含用户协议和隐私政策链接的富文本字符串
+    private func makeAttributedText() -> AttributedString {
+        // 使用 LocalizedString 来获取本地化字符串
+        let userAgreementStart = LocalizedString("User Agreement Start")
+        let userAgreement = LocalizedString("User Agreement")
+        let privacyPolicy = LocalizedString("Privacy Policy")
+        let and = LocalizedString("User Agreement And")
+
+        // 拼接字符串
+        let userAgreementString = "\(userAgreementStart)\(userAgreement)\(and)\(privacyPolicy)"
+
+        // 创建一个 AttributedString 对象
+        var attributedString = AttributedString(userAgreementString)
+
+        // 设置链接
+        attributedString.linkAttributedString(for: userAgreement, url: Config.LINK_USER_USER_AGREEMENT.url)
+        attributedString.linkAttributedString(for: privacyPolicy, url: Config.LINK_USER_PRIVACY_POLICY.url)
+
+        return attributedString
     }
 }
 
